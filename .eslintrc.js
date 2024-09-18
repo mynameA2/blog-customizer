@@ -9,13 +9,15 @@ module.exports = {
 		react: {
 			version: 'detect',
 		},
-		"import/resolver": {
+		'import/resolver': {
 			typescript: {
 				project: "tsconfig.json",
 			}
 		}
 	},
 	extends: [
+		'eslint:recommended',
+		'plugin:prettier/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:prettier/recommended',
 		'prettier',
@@ -38,5 +40,20 @@ module.exports = {
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'react-hooks/exhaustive-deps': 'off',
 		'import/no-named-as-default': 'off',
+		'prettier/prettier': [
+			'error',
+			{
+				semi: true,
+				trailingComma: 'es5',
+				singleQuote: true,
+				jsxSingleQuote: true,
+				bracketSameLine: true,
+				printWidth: 80,
+				useTabs: true,
+				tabWidth: 2,
+				endOfLine: 'lf',
+			},
+		],
+		'no-console': 'off', // пример отключения других правил
 	},
 };
