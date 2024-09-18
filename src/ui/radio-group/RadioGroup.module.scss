@@ -39,9 +39,8 @@
 }
 
 .label:hover {
-	background-color: #FFEDAB;
+	background-color: #ffedab;
 }
-
 
 .item[data-checked='true'] .label:hover {
 	background: var(--gold, #ffc802);

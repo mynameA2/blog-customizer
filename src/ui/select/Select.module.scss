@@ -13,8 +13,8 @@
 	top: 50%;
 	right: 6px;
 	margin-top: -12px;
-	transition: transform 0.2s ease-in-out, margin-top 0.2s ease-in-out;
 	width: 24px;
+	transition: transform 0.2s ease-in-out, margin-top 0.2s ease-in-out;
 }
 
 .placeholder {
@@ -44,8 +44,8 @@
 }
 
 .selectWrapper:not([data-is-active='true'])
-.placeholder:not([data-status='invalid']):hover {
-	outline: 1px solid #FFC802;
+	.placeholder:not([data-status='invalid']):hover {
+	outline: 1px solid #ffc802;
 }
 
 .select {
